@@ -1,5 +1,5 @@
 # Dice.Game
 
-Réalisation d'un jeu de dé à 2 joueurs. Tour par tour . La face 1 switch de joueur . Le premier à 100 gagne.
+Making a dice game for 2 players. Turn by turn . Side 1 switches player. The first to reach 100 wins.
 
-Utilisation de html/css/js
+Use of html/css/js
