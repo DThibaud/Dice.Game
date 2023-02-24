@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <title>Dice Game</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="./style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Dice Game</title>
 
-    <body class="text-center background" id="backGround"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-        <div class="row mainBoard mx-auto" id="mainBoard">
+<!--Background-->
 
-            <div class="col-6 playerOneBoard text-center" id="playerOneBoard">
-                <p class="playerName"  id="playerNameOne">Player 1
-                     <i class="dot ms-2" id="dotOne"></i></p>
-                <p class="totalScore" id="totalOne">43</p>
-                <div class="botbox border g-0" id="botBoxOne">
-                    <p class="currentOne " id="currentOne">current
-                        <p class="currentPoints" id="currentPointsOne">11</p>
-                    </p>
-                </div>
+<body class="text-center background" id="backGround">
+
+    <!--Mainboard-->
+    <div class="row mainBoard mx-auto" id="mainBoard">
+
+        <!--PLayer 1 board & Points-->
+        <div class="col-6 playerOneBoard text-center" id="playerOneBoard">
+            <p class="playerName" id="playerNameOne">Player 1 </p>
+            <p class="totalScore" id="totalOne">43</p>
+
+            <!--Box for current Points-->
+            <div class="botbox border g-0" id="botBoxOne">
+                <p class="currentOne " id="currentOne">current
+                <p class="currentPoints" id="currentPointsOne">0</p>
+                </p>
             </div>
+        </div>
 
-            <div class="col-6 playerTwoBoard align-items-center" id="playerTwoBoard">
-                <p class="playerName " id="playerNameTwo">Player 2
-                    <i class="dot ms-2" id="dotTwo"></i></p>
-                <p class="totalScore" id="totalTwo">72</p>
-                <div class="botbox border g-0  " id="botBoxTwo">
-                    <p class="currentTwo " id="currentTwo">current</p>
-                    <p class="currentPoints " id="currentPointsTwo">0</p>
-                    
-                </div>
+        <!--Player 2 board & Points-->
+        <div class="col-6 playerTwoBoard align-items-center" id="playerTwoBoard">
+            <p class="playerName " id="playerNameTwo">Player 2
+            </p>
+            <p class="totalScore" id="totalTwo">0</p>
+
+            <!--Box Current Points-->
+            <div class="botbox border g-0  " id="botBoxTwo">
+                <p class="currentTwo " id="currentTwo">current</p>
+                <p class="currentPoints " id="currentPointsTwo">0</p>
+
             </div>
-            
-            <div class="interface" id="interface" >
-                <button class="newGameBtn" id="newGameBtn">
-                    <i class="bi bi-plus-circle me-2"></i>New Game</button>
-                <img class="dice shadow" src="./images/dice-5.png" alt="dice" id="dice">
-                <button class="rollBtn d-inline-block" id="rollBtn">
-                    <i class="bi bi-arrow-repeat me-2"></i> Roll Dice </button>
-                <button class="holdBtn d-inline-block" id="holdBtn">
-                    <i class="bi bi-box-arrow-in-down me-3"></i>Hold</button>
-            </div>
+        </div>
 
+        <!--Interface & Dice-->
+        <div class="interface" id="interface">
+            <button class="newGameBtn" id="newGameBtn">
+                <i class="bi bi-plus-circle me-2"></i>New Game</button>
+            <img class="dice shadow" src="./images/dice-5.png" alt="dice" id="dice">
+            <button class="rollBtn d-inline-block" id="rollBtn">
+                <i class="bi bi-arrow-repeat me-2"></i> Roll Dice </button>
+            <button class="holdBtn d-inline-block" id="holdBtn">
+                <i class="bi bi-box-arrow-in-down me-3"></i>Hold</button>
+        </div>
 
+        <!--Script-->
 
         <script src="./script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+
 </html>
