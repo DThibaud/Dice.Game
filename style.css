@@ -228,18 +228,6 @@ button:active {
     left: 44vw;
   }
 
-  button {
-    font-size: 1rem;
-  }
-
-  button:hover {
-    font-size: 1.7rem;
-  }
-
-  button:active {
-    font-size: 1rem;
-  }
-
   #botBoxOne {
     top: 60vh;
     left: 15vw;
@@ -275,31 +263,32 @@ button:active {
 }
 
 @media (max-width: 450px) {
+
+
   .playerName {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .totalScore {
     font-size: 3rem;
   }
 
-  #totalTwo {
-    top: 50vh;
-  }
 
   .dice {
     height: 75px;
     width: 75px;
-    left: 44vw;
+    left: 40vw;
   }
 
   button {
     font-size: 0.7rem;
   }
 
-  .currentPoints {
-    font-size: 1.5rem;
+  button:hover {
+    font-size: 1.2rem;
   }
+
+
 
   .currentOne,
   .currentTwo {
@@ -307,31 +296,33 @@ button:active {
   }
 
   .botbox {
-    width: 120px;
-    height: 80px;
+    width: 110px;
+    height: 90px;
   }
 
   #botBoxOne {
     top: 55vh;
-    left: 10vw;
+    left: 7vw;
   }
 
   #botBoxTwo {
     top: 55vh;
-    left: 63vw;
+    left: 59vw;
   }
 
   .newGameBtn {
-    left: 38vw;
+    left: 34vw;
   }
 
   .rollBtn {
     top: 75vh;
-    left: 40vw;
+    left: 34vw;
   }
 
   .holdBtn {
     top: 80vh;
-    left: 42vw;
+    left: 36vw;
   }
 }
+
+
